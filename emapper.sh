@@ -23,11 +23,13 @@ outDir="/lisc/data/scratch/course/2025w300106/doloi/results/map"
 mkdir $outDir/emapper
 
 ## data dir already specified; check by echo in the lisc
-## e-value to 0.006 to reduce the chance of random matches, but also not too strict
+## --override to override previous results when restarting the same job
+## diamond default
+## experimental evidence taken for GO terms
 
 echo "Job started on $(date)"
 
-emapper.py --override --cpu 8 -i $wd/proteins.filtered.fasta --itype proteins -m diamond --evalue 1e-5 --seed_ortholog_evalue 0.006 --go_evidence experimental -o celegans_emapper  --output_dir $outDir/emapper
+emapper.py --override --cpu 8 -i $wd/proteins.filtered.fasta --itype proteins -m diamond --evalue 1e-5 --go_evidence experimental -o celegans_emapper  --output_dir $outDir/emapper
 
 echo "Job finished on $(date)"
 
