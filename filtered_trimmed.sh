@@ -22,8 +22,16 @@ wd="/lisc/data/scratch/course/2025w300106/doloi/results/map"
 outDir="/lisc/data/scratch/course/2025w300106/doloi/results/map"
 
 ### EXECUTION
+
+## -b gives a BAM output
+## -q mapping quality filtered out
+## -G excludes unmapped reads, see decoding sam flags by Broad Institute
+
+
 echo "Job started on $(date)"
+
 samtools view -b -@ 4 -o $outDir/filtered_trimmed_SRR36631310_WBCel.bam -q 20 -G 12 $wd/trimmed_SRR36631310_WBCelAligned.sortedByCoord.out.bam
+
 echo "Job finished on $(date)"
 
 
