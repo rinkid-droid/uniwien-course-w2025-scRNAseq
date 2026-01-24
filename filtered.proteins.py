@@ -1,6 +1,9 @@
 from Bio import SeqIO
 
-# Simple version - just filters and writes
+## since the fasta had '.' in between sequences
+## this code just filters and writes
+
+
 input_file = "proteins.fasta"
 output_file = "proteins.filtered.fasta"
 
