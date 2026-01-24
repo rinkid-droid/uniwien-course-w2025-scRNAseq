@@ -24,7 +24,7 @@ outDir="/lisc/data/scratch/course/2025w300106/doloi/results/map"
 ### EXECUTION
 
 ## -b gives a BAM output
-## -q mapping quality filtered out
+## -q mapping quality filters
 ## -G excludes unmapped reads, see decoding sam flags by Broad Institute
 
 
