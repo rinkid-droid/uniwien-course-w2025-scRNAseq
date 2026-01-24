@@ -23,10 +23,12 @@ outDir="/lisc/data/scratch/course/2025w300106/doloi/results/map"
 
 ### EXECUTION
 
-# -p for paired ends and count only a single read per template
-# count only primary alignment
-# ignoreDup to remove duplicated reads
-# i think its a reverse stranded library
+## -p for paired ends and count only a single read per template
+## count only primary alignment
+## ignoreDup to remove duplicated reads
+## i think its a reverse-stranded library
+## -C to remove chimeric from counting
+## -s = 2 for reverse strand-specific read counts
 
 echo "Job started on $(date)"
 
