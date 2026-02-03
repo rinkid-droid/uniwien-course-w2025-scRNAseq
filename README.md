@@ -3,7 +3,7 @@ Scripts used for the first part of the scRNAseq course (w300106) by jdmontenegro
 ## Content of the repository
 | **Files**  | **Description** |
 | ------------- | ------------- |
-| emapper.sh  | Contains slurm script for eggnogmapper module for functional annotations of proteins |
+| emapper.sh  | Contains slurm script from eggnogmapper module for functional annotations of proteins |
 | featurecounts.sh  | Contains slurm script for featurecounts from the Subread module for getting counts from mapped reads |
 | filtered.proteins.py  | Contains python script for seqIO from the Biopython module for filtering '.' |
 | filtered_samtools.sh | Contains slurm script from SAMtools view module for filtering reads |
