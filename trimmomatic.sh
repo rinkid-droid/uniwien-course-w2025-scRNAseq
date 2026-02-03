@@ -22,6 +22,11 @@ outDir="$wd/results/trimmomatic"
 
 ### EXECUTION
 
+## MINLEN - minimum read length to be kept
+## SLIDINGWINDOW - windowSize = to specify the number of bases to average: requiredQuality = to specify the average quality
+## ILLUMINACLIP - seed mismatches = specify the maximum mismatch count to allow a full match, not more than 2: palindrome clip threshold = 30, accuracy between adapters: simple clip threshold = 10, accuracy between adapter against read
+
+
 echo "Started job on $(date)"
 mkdir -p $outDir
 
