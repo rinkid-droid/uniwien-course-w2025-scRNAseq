@@ -3,6 +3,7 @@ Scripts used for the first part of the scRNAseq course (w300106) by jdmontenegro
 ## Content of the repository
 | **Files**  | **Description** |
 | ------------- | ------------- |
+| cellranger.sh | Contains slurm script from Cellranger module for count matrices |
 | emapper.sh  | Contains slurm script from eggnogmapper module for functional annotations of proteins |
 | featurecounts.sh  | Contains slurm script for featurecounts from the Subread module for getting counts from mapped reads |
 | filtered.proteins.py  | Contains python script for seqIO from the Biopython module for filtering '.' |
